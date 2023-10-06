@@ -44,8 +44,8 @@ I just use Azure to host the server. Azure expects the index.js file to the be t
 
 5. Browse Your Application:
    1. After you've pushed your changes, go back to your App Service's "Overview" tab.
-   2. You'll see a URL that looks like http://<app-name>.azurewebsites.net. Click on this URL to navigate to your deployed application.
+   2. You'll see a URL that looks like ```http://<app-name>.azurewebsites.net```. Click on this URL to navigate to your deployed application.
 
 ## Add the IP address to the IP whitelist for your MongoDB instance
-Make sure to add the IP address associated with http://<app-name>.azurewebsites.net to the IP whitelist for your DB. Should be accessible in "Network Access" under the "Security" section. Not sure if MongoDB Atlas provides an option to add a domain name directly but it might!
+Make sure to add the IP address associated with ```http://<app-name>.azurewebsites.net``` to the IP whitelist for your DB. Should be accessible in "Network Access" under the "Security" section. Not sure if MongoDB Atlas provides an option to add a domain name directly but it might!
 
