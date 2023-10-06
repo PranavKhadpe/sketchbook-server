@@ -9,7 +9,7 @@
    ```mongoose.connect("ADD YOUR CONNECTION STRING", { useNewUrlParser: true, useUnifiedTopology: true });```
 
 ## Hosting the server:
-I just use Azure to host the server. If, like me, you'd rather use the Azure Portal (website) instead of the Azure CLI to deploy your Node.js application, you can follow the steps below:
+I just use Azure to host the server. Azure expects the index.js file to the be the entry point of the module. It also expects the default branch to be named ```master```. The structure and naming conventions of this repository are a result of that. If, like me, you'd rather use the Azure Portal (website) instead of the Azure CLI to deploy your Node.js application, you can follow the steps below:
 
 1. Sign in to Azure Portal:
    1. Navigate to Azure Portal.
@@ -45,4 +45,5 @@ I just use Azure to host the server. If, like me, you'd rather use the Azure Por
 5. Browse Your Application:
    1. After you've pushed your changes, go back to your App Service's "Overview" tab.
    2. You'll see a URL that looks like http://<app-name>.azurewebsites.net. Click on this URL to navigate to your deployed application.
+
 
