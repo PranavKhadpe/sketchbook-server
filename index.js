@@ -7,10 +7,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect(
-  "mongodb+srv://pranavkhadpe:Pranav123@cluster0.t1qyo6s.mongodb.net/blogs?retryWrites=true&w=majority",
-  { useNewUrlParser: true, useUnifiedTopology: true }
-);
+mongoose.connect("ADD YOUR CONNECTION STRING", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const postSchema = new mongoose.Schema({
   title: String,
